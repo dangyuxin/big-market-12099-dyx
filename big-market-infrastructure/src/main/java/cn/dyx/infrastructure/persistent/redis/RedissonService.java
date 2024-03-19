@@ -37,7 +37,7 @@ public class RedissonService implements IRedisService {
     }
 
     @Override
-    public RMap<Object, Object> getMap(String key) {
+    public <K,V> RMap<K, V> getMap(String key) {
         return redissonClient.getMap(key);
     }
 
@@ -108,6 +108,11 @@ public class RedissonService implements IRedisService {
 
     public String getFromMap(String key, String field) {
         RMap<String, String> map = redissonClient.getMap(key);
+        return map.get(field);
+    }
+
+    public <K,V> V getFromMap(String key, K field) {
+        RMap<K, V> map = redissonClient.getMap(key);
         return map.get(field);
     }
 

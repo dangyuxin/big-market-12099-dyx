@@ -43,7 +43,7 @@ public interface IRedisService {
      * @param key 键
      * @return map
      */
-    RMap<Object, Object> getMap(String key);
+    <K,V> RMap<K, V> getMap(String key);
 
     /**
      * 加锁队列
@@ -162,6 +162,8 @@ public interface IRedisService {
      * @return 值
      */
     String getFromMap(String key, String field);
+
+    <K,V> V getFromMap(String key, K field);
 
     /**
      * 将指定的值添加到有序集合中
