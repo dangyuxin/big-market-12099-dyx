@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class StrategyArmory implements IStrategyArmory {
+public class StrategyArmory implements IStrategyArmory, IStrategyDispatch {
 
     @Resource
     private IStrategyRepository strategyRepository;
@@ -53,21 +53,21 @@ public class StrategyArmory implements IStrategyArmory {
         //7，创建集合存储
         HashMap<Integer, Integer> shuffleStrategyAwardSearchRateTable = new HashMap<>();
         for (int i = 0; i < strategyAwardSearchRateTable.size(); i++) {
-            shuffleStrategyAwardSearchRateTable.put(i,strategyAwardSearchRateTable.get(i));
+            shuffleStrategyAwardSearchRateTable.put(i, strategyAwardSearchRateTable.get(i));
         }
 
         //8.Redis存储集合
-        strategyRepository.storeStrategyAwardSearchRateTable(strategyId,strategyAwardSearchRateTable.size(),shuffleStrategyAwardSearchRateTable);
+        strategyRepository.storeStrategyAwardSearchRateTable(strategyId, strategyAwardSearchRateTable.size(),
+                shuffleStrategyAwardSearchRateTable);
 
 
     }
 
     @Override
     public Integer getRandomAwardId(Long strategyId) {
-
         int rateRange = strategyRepository.getRateRange(strategyId);
-
-
-        return strategyRepository.getStrategyAwardAssemble(strategyId,new SecureRandom().nextInt(rateRange));
+        return strategyRepository.getStrategyAwardAssemble(strategyId, new SecureRandom().nextInt(rateRange));
     }
+
+
 }
