@@ -25,4 +25,9 @@ public class Strategy {
      * 更新时间
      */
     private Date updateTime;
+    /**
+     * 抽奖策略规则
+     */
+    private String ruleModels;
+
 }

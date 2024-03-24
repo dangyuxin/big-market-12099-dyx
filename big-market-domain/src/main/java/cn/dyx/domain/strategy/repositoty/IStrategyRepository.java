@@ -1,6 +1,8 @@
 package cn.dyx.domain.strategy.repositoty;
 
 import cn.dyx.domain.strategy.model.entity.StrategyAwardEntity;
+import cn.dyx.domain.strategy.model.entity.StrategyEntity;
+import cn.dyx.domain.strategy.model.entity.StrategyRuleEntity;
 
 import java.util.HashMap;
 import java.util.List;
@@ -8,9 +10,16 @@ import java.util.List;
 public interface IStrategyRepository {
     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
 
-    void storeStrategyAwardSearchRateTable(Long strategyId, int rateRange, HashMap<Integer, Integer> shuffleStrategyAwardSearchRateTable);
+    void storeStrategyAwardSearchRateTable(String key, int rateRange,
+                                           HashMap<Integer, Integer> shuffleStrategyAwardSearchRateTable);
 
     int getRateRange(Long strategyId);
 
-    Integer getStrategyAwardAssemble(Long strategyId, int rateRange);
+    int getRateRange(String key);
+
+    Integer getStrategyAwardAssemble(String key, int rateRange);
+
+    StrategyEntity getStrategyStrategyEntityByStrategyId(Long strategyId);
+
+    StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleMode);
 }

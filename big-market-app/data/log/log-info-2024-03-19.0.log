@@ -1,0 +1,79 @@
+24-03-19.21:22:46.730 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 16528 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.21:22:46.731 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-03-19.21:22:47.517 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.21:22:47.520 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.21:22:47.549 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-03-19.21:22:48.975 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.21:23:00.808 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'strategyRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [cn/dyx/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+24-03-19.21:23:29.952 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 22656 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.21:23:29.952 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-03-19.21:23:30.626 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.21:23:30.629 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.21:23:30.652 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-03-19.21:23:31.997 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.21:23:32.622 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.21:23:32.631 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.21:23:34.122 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-19.21:23:34.184 [main            ] INFO  ApiTest                - Started ApiTest in 4.577 seconds (JVM running for 5.306)
+24-03-19.21:34:37.533 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 14120 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.21:34:37.534 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-03-19.21:34:38.274 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.21:34:38.277 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.21:34:38.302 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-03-19.21:34:39.680 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.21:34:40.310 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.21:34:40.322 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.21:34:41.803 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-19.21:34:41.863 [main            ] INFO  ApiTest                - Started ApiTest in 4.723 seconds (JVM running for 5.505)
+24-03-19.21:34:42.174 [main            ] INFO  ApiTest                - 101
+24-03-19.21:34:42.174 [main            ] INFO  ApiTest                - 测试完成
+24-03-19.22:10:12.571 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 5576 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.22:10:12.572 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-03-19.22:10:13.349 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.22:10:13.352 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.22:10:13.381 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+24-03-19.22:10:14.876 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.22:10:15.539 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:10:15.552 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:10:17.056 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-19.22:10:17.113 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.933 seconds (JVM running for 5.719)
+24-03-19.22:10:17.367 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-19.22:10:17.963 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-19.22:10:18.085 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-19.22:10:18.090 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-19.22:12:07.764 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 23148 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.22:12:07.764 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-03-19.22:12:08.430 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.22:12:08.433 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.22:12:08.457 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-03-19.22:12:09.747 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.22:12:10.367 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:12:10.377 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:12:11.795 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-19.22:12:11.853 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.435 seconds (JVM running for 5.193)
+24-03-19.22:12:12.102 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:12.104 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:12.106 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:43.118 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 16132 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-19.22:12:43.119 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+24-03-19.22:12:43.825 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-19.22:12:43.828 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-19.22:12:43.852 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-03-19.22:12:45.187 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-19.22:12:45.810 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:12:45.819 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-19.22:12:47.273 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-19.22:12:47.332 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.561 seconds (JVM running for 5.283)
+24-03-19.22:12:47.583 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.585 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.587 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 103
+24-03-19.22:12:47.589 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.591 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.593 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.594 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.596 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 102
+24-03-19.22:12:47.598 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.600 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 102
+24-03-19.22:12:47.602 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.604 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 101
+24-03-19.22:12:47.606 [main            ] INFO  StrategyArmoryTest     - 抽奖结果 --> 102
