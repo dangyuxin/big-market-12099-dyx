@@ -3,6 +3,7 @@ package cn.dyx.infrastructure.persistent.repository;
 import cn.dyx.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyRuleEntity;
+import cn.dyx.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import cn.dyx.domain.strategy.repositoty.IStrategyRepository;
 import cn.dyx.infrastructure.persistent.dao.IStrategyAwardDao;
 import cn.dyx.infrastructure.persistent.dao.IStrategyDao;
@@ -144,5 +145,15 @@ public class StrategyRepository implements IStrategyRepository {
         redisService.setValue(cacheKey, strategyEntity);
         return strategyEntity;
     }
+
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId) {
+        StrategyAward strategyAward = new StrategyAward();
+        strategyAward.setStrategyId(strategyId);
+        strategyAward.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModels(strategyAward);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
+    }
+
 
 }

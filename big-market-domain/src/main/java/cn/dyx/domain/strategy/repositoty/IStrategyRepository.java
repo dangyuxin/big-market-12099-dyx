@@ -3,6 +3,7 @@ package cn.dyx.domain.strategy.repositoty;
 import cn.dyx.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyRuleEntity;
+import cn.dyx.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 
 import java.util.HashMap;
 import java.util.List;
@@ -26,4 +27,6 @@ public interface IStrategyRepository {
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
     StrategyEntity queryStrategyEntityByStrategyId(Long strategyId);
+
+    StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
 }

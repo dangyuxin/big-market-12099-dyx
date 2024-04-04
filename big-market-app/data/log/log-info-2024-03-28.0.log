@@ -1,0 +1,182 @@
+24-03-28.20:44:17.970 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 24236 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:44:17.971 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:44:18.813 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:44:18.816 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:44:18.848 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-03-28.20:44:20.491 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:44:21.251 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:44:21.264 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:44:22.840 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:44:22.905 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.329 seconds (JVM running for 6.142)
+24-03-28.20:44:23.176 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:44:23.952 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:44:24.050 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:44:24.070 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:44:24.072 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:44:24.083 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=dyx, strategyId=100001)
+24-03-28.20:44:24.084 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:44:24.108 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:44:24.119 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-28.20:45:17.444 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 13260 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:45:17.444 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:45:18.174 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:45:18.176 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:45:18.203 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-03-28.20:45:19.687 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:45:20.455 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:45:20.465 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:45:21.975 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:45:22.036 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.954 seconds (JVM running for 5.705)
+24-03-28.20:45:22.301 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:user001 strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:45:22.331 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:45:23.038 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:45:23.079 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=user001, strategyId=100001)
+24-03-28.20:45:23.079 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=100, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:45:23.107 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:45:23.108 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-28.20:45:42.369 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 2096 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:45:42.370 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:45:43.119 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:45:43.122 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:45:43.149 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-03-28.20:45:44.639 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:45:45.417 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:45:45.427 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:45:46.962 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:45:47.035 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.029 seconds (JVM running for 5.821)
+24-03-28.20:45:47.323 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:45:47.353 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:45:48.063 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:45:48.110 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:45:48.112 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:45:48.123 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=dyx, strategyId=100001)
+24-03-28.20:45:48.124 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:45:48.146 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:45:48.148 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-28.20:46:42.624 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 9584 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:46:42.624 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:46:43.335 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:46:43.337 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:46:43.364 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+24-03-28.20:46:44.850 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:46:45.583 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:46:45.594 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:46:47.118 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:46:47.179 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.915 seconds (JVM running for 5.718)
+24-03-28.20:46:47.385 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=dyx, strategyId=100001)
+24-03-28.20:46:47.453 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:47.486 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:46:48.250 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:46:48.307 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.308 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.320 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.322 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.323 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.324 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.327 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.328 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.330 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.331 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.333 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.334 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.335 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.337 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.338 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=103, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.340 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.341 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.342 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.343 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=101, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.344 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.345 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.347 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.348 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.349 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.350 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.351 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.353 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=101, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.354 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.355 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.356 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.358 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.359 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.361 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.362 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.364 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.365 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:46:48.366 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:46:48.367 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0000 info: 放行；执行后续的流程，不受规则引擎影响
+24-03-28.20:46:48.369 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=101, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:46:48.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:46:48.416 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-28.20:47:46.493 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 23604 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:47:46.493 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:47:47.216 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:47:47.219 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:47:47.247 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-03-28.20:47:48.709 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:47:49.469 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:47:49.479 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:47:50.994 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:47:51.055 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.923 seconds (JVM running for 5.666)
+24-03-28.20:47:51.261 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=dyx, strategyId=100001)
+24-03-28.20:47:51.331 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:51.365 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:47:52.070 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:47:52.107 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.110 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.120 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.121 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.123 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.123 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.125 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.126 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.128 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.129 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.131 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=103, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.131 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.132 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.133 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.136 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.136 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.137 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.138 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.140 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=102, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.140 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.141 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.142 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.144 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.145 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.146 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.147 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.148 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=104, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.149 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.150 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.152 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.153 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=103, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.154 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.155 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.156 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.158 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=105, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.158 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:dyx strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:47:52.160 [main            ] INFO  RuleWeightLogicFilter  - 规则过滤-权重范围 userId:dyx strategyId:100001 ruleModel:rule_weight
+24-03-28.20:47:52.161 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: dyx ruleModel: rule_weight code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-03-28.20:47:52.163 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=105, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:47:52.188 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:47:52.191 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-03-28.20:49:28.134 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 11956 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-03-28.20:49:28.135 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-03-28.20:49:28.844 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-03-28.20:49:28.847 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-03-28.20:49:28.874 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-03-28.20:49:30.374 [main            ] INFO  Version                - Redisson 3.23.4
+24-03-28.20:49:31.106 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:49:31.118 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-03-28.20:49:32.609 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-03-28.20:49:32.670 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.893 seconds (JVM running for 5.784)
+24-03-28.20:49:32.944 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:user001 strategyId:100001 ruleModel:rule_blacklist
+24-03-28.20:49:32.977 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-03-28.20:49:33.723 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-03-28.20:49:33.766 [main            ] INFO  RaffleStrategyTest     - 参数因子 --> RaffleFactorEntity(userId=user001, strategyId=100001)
+24-03-28.20:49:33.766 [main            ] INFO  RaffleStrategyTest     - 抽奖结果 --> RaffleAwardEntity(strategyId=null, awardId=100, awardKey=null, awardConfig=null, awardDesc=null)
+24-03-28.20:49:33.787 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-03-28.20:49:33.789 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
