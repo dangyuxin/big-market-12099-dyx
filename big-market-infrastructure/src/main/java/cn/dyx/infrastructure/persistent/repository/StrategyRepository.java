@@ -122,6 +122,11 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
+    public String queryStrategyRuleValue(Long strategyId, String s) {
+        return queryStrategyRuleValue(strategyId,null,s);
+    }
+
+    @Override
     public String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
         StrategyRule strategyRule = new StrategyRule();
         strategyRule.setStrategyId(strategyId);

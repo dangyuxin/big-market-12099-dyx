@@ -1,6 +1,6 @@
 package cn.dyx.domain.strategy.model.vo;
 
-import cn.dyx.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import cn.dyx.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import cn.dyx.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
