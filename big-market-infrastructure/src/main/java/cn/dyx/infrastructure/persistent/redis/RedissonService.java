@@ -9,6 +9,7 @@ import java.time.Duration;
 
 /**
  * Redis 服务 - Redisson
+ *
  * @author Fuzhengwei bugstack.cn @小傅哥
  */
 @Service("redissonService")
@@ -37,7 +38,7 @@ public class RedissonService implements IRedisService {
     }
 
     @Override
-    public <K,V> RMap<K, V> getMap(String key) {
+    public <K, V> RMap<K, V> getMap(String key) {
         return redissonClient.getMap(key);
     }
 
@@ -111,7 +112,7 @@ public class RedissonService implements IRedisService {
         return map.get(field);
     }
 
-    public <K,V> V getFromMap(String key, K field) {
+    public <K, V> V getFromMap(String key, K field) {
         RMap<K, V> map = redissonClient.getMap(key);
         return map.get(field);
     }

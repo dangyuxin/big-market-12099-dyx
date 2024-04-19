@@ -22,7 +22,6 @@ public enum RuleLimitTypeVO {
     ;
 
 
-
     private final Integer code;
     private final String info;
 }

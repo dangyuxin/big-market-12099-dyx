@@ -22,9 +22,9 @@ public class ApiTest {
     public void test() {
 
         RMap<Object, Object> map = redisService.getMap("strategy_id_10001");
-        map.put(1,101);
+        map.put(1, 101);
 
-        log.info("{}",redisService.getFromMap("strategy_id_10001",1).toString());
+        log.info("{}", redisService.getFromMap("strategy_id_10001", 1).toString());
 
         log.info("测试完成");
     }

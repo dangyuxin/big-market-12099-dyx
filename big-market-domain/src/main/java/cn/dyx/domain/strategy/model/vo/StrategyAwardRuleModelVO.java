@@ -31,7 +31,8 @@ public class StrategyAwardRuleModelVO {
      * .collect(Collectors.toList());
      * return ruleModelList;
      * <p>
-     * List<String> collect = Arrays.stream(ruleModelValues).filter(DefaultLogicFactory.LogicModel::isCenter).collect(Collectors.toList());
+     * List<String> collect = Arrays.stream(ruleModelValues).filter(DefaultLogicFactory.LogicModel::isCenter).collect
+     * (Collectors.toList());
      */
     public String[] raffleCenterRuleModelList() {
         List<String> ruleModelList = new ArrayList<>();

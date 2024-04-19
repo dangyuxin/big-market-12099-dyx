@@ -1,10 +1,10 @@
 package cn.dyx.domain.strategy.service.rule.tree.impl;
 
+import cn.dyx.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import cn.dyx.domain.strategy.service.rule.tree.ILogicTreeNode;
 import cn.dyx.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import cn.dyx.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 
 /**
  * @author dyx

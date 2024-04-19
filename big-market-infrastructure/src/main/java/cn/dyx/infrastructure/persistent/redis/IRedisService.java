@@ -43,7 +43,7 @@ public interface IRedisService {
      * @param key 键
      * @return map
      */
-    <K,V> RMap<K, V> getMap(String key);
+    <K, V> RMap<K, V> getMap(String key);
 
     /**
      * 加锁队列
@@ -58,7 +58,7 @@ public interface IRedisService {
      * 延迟队列
      *
      * @param rBlockingQueue 加锁队列
-     * @param <T> 泛型
+     * @param <T>            泛型
      * @return 队列
      */
     <T> RDelayedQueue<T> getDelayedQueue(RBlockingQueue<T> rBlockingQueue);
@@ -163,7 +163,7 @@ public interface IRedisService {
      */
     String getFromMap(String key, String field);
 
-    <K,V> V getFromMap(String key, K field);
+    <K, V> V getFromMap(String key, K field);
 
     /**
      * 将指定的值添加到有序集合中

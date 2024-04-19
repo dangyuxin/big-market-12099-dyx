@@ -3,5 +3,5 @@ package cn.dyx.domain.strategy.service.armory;
 public interface IStrategyDispatch {
     Integer getRandomAwardId(Long strategyId);
 
-    Integer getRandomAwardId(Long strategyId,String ruleWeightValue);
+    Integer getRandomAwardId(Long strategyId, String ruleWeightValue);
 }

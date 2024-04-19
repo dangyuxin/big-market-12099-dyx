@@ -44,11 +44,11 @@ public class DefaultLogicFactory {
         private final String info;
         private final String type;
 
-        public static boolean isCenter(String code){
+        public static boolean isCenter(String code) {
             return "center".equals(LogicModel.valueOf(code.toUpperCase()).type);
         }
 
-        public static boolean isAfter(String code){
+        public static boolean isAfter(String code) {
             return "after".equals(LogicModel.valueOf(code.toUpperCase()).type);
         }
 

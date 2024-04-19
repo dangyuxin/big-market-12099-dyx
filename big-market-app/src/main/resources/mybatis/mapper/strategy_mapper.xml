@@ -12,7 +12,7 @@
     </resultMap>
 
 
-    <select id="queryStrategyList"  resultMap="dataMap">
+    <select id="queryStrategyList" resultMap="dataMap">
         select strategy_id
         from strategy
         limit 10

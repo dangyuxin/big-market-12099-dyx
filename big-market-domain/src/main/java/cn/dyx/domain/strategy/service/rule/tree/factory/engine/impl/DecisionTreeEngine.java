@@ -21,17 +21,16 @@ import java.util.Map;
 public class DecisionTreeEngine implements IDecisionTreeEngine {
 
     private final Map<String, ILogicTreeNode> logicTreeNodeGroup;
+    private final RuleTreeVO ruleTreeVO;
 
     public DecisionTreeEngine(Map<String, ILogicTreeNode> logicTreeNodeGroup, RuleTreeVO ruleTreeVO) {
         this.logicTreeNodeGroup = logicTreeNodeGroup;
         this.ruleTreeVO = ruleTreeVO;
     }
 
-    private final RuleTreeVO ruleTreeVO;
-
     @Override
-    public DefaultTreeFactory.StrategyAwardData process(String userId, Long strategyId, Integer awardId) {
-        DefaultTreeFactory.StrategyAwardData strategyAwardData = null;
+    public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
+        DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
 
         // 获取基础信息
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
@@ -46,8 +45,9 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
             // 决策节点计算
             DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logics(userId, strategyId, awardId);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
-            strategyAwardData = logicEntity.getStrategyAwardData();
-            log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckTypeVO.getCode());
+            strategyAwardData = logicEntity.getStrategyAwardVO();
+            log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode
+                    , ruleLogicCheckTypeVO.getCode());
 
             // 获取下个节点
             nextNode = nextNode(ruleLogicCheckTypeVO.getCode(), ruleTreeNode.getTreeNodeLineVOList());
@@ -67,7 +67,6 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         }
         throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
     }
-
 
 
     public boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine) {

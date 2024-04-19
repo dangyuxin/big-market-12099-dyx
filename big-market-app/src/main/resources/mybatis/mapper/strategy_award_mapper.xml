@@ -18,7 +18,7 @@
     </resultMap>
 
 
-    <select id="queryStrategyAwardList"  resultMap="dataMap">
+    <select id="queryStrategyAwardList" resultMap="dataMap">
         select strategy_id
         from strategy_award
         limit 10
@@ -32,8 +32,10 @@
 
     <select id="queryStrategyAwardRuleModels" parameterType="cn.dyx.infrastructure.persistent.po.StrategyAward"
             resultType="java.lang.String">
-        select rule_models from strategy_award
-        where strategy_id = #{strategyId} and award_id = #{awardId}
+        select rule_models
+        from strategy_award
+        where strategy_id = #{strategyId}
+          and award_id = #{awardId}
     </select>
 
 
