@@ -5,6 +5,7 @@ import cn.dyx.domain.strategy.model.entity.StrategyEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.dyx.domain.strategy.model.vo.RuleTreeVO;
 import cn.dyx.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import cn.dyx.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 
 import java.util.HashMap;
 import java.util.List;
@@ -34,4 +35,14 @@ public interface IStrategyRepository {
     String queryStrategyRuleValue(Long strategyId, String s);
 
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
+
+    void cacheStrategyAwardCount(String key, Integer awardCount);
+
+    Boolean substractionAwardStock(String key);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
+
+    StrategyAwardStockKeyVO takeQueueValue();
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }
