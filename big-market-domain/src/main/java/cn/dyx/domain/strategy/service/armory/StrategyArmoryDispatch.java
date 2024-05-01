@@ -35,7 +35,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             cacheStrategyAwardCount(strategyId,awardId,awardCount);
         }
 
-        StrategyEntity strategyEntity = strategyRepository.getStrategyStrategyEntityByStrategyId(strategyId);
+        StrategyEntity strategyEntity = strategyRepository.getStrategyEntityByStrategyId(strategyId);
         String weight = strategyEntity.getWeight();
         if (weight == null)
             return true;
