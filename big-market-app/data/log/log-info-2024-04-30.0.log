@@ -1,0 +1,372 @@
+24-04-30.15:42:17.151 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 8264 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:42:17.152 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:42:18.053 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:42:18.056 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:42:18.091 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-04-30.15:42:19.647 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:42:20.380 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:42:20.394 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:42:22.061 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:42:22.120 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.351 seconds (JVM running for 6.179)
+24-04-30.15:42:22.429 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:42:22.438 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:42:22.438 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:42:22.455 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:42:23.112 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:42:23.154 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:42:23.155 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:42:23.155 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:42:23.158 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:42:23.176 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:42:23.207 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:42:23.209 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:43:37.079 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 23308 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:43:37.080 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:43:37.778 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:43:37.781 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:43:37.810 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-04-30.15:43:39.214 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:43:39.899 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:43:39.908 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:43:41.407 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:43:41.470 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.732 seconds (JVM running for 5.48)
+24-04-30.15:43:41.690 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:43:42.324 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:43:42.433 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:43:42.444 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:43:42.444 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:43:42.460 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.462 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:43:42.467 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.470 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.489 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:43:42.489 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:43:42.489 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:43:42.489 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:43:42.489 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:43:42.646 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:43:42.648 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:43:42.652 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:43:42.652 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:43:42.655 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.655 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:43:42.655 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.661 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.662 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:43:42.662 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:43:42.662 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:43:42.662 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:43:42.662 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:43:42.662 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:43:42.662 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:43:42.665 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:43:42.665 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:43:42.667 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.667 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:43:42.667 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.668 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:43:42.669 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:43:42.670 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:43:42.670 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:43:42.670 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:43:42.670 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:43:42.670 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:43:42.670 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:43:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:43:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:43:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:43:55.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:43:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:44:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:44:00.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:44:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:44:10.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:44:11.334 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:44:11.340 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:44:50.231 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 16672 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:44:50.232 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:44:50.948 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:44:50.950 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:44:50.985 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-04-30.15:44:52.440 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:44:53.106 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:44:53.117 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:44:54.617 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:44:54.690 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.805 seconds (JVM running for 5.618)
+24-04-30.15:44:54.968 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:44:54.974 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:44:54.974 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:44:54.990 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:44:55.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:44:55.699 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:44:55.740 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:44:55.741 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:44:55.742 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:44:55.745 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:44:55.763 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:44:55.789 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:44:55.796 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:47:22.015 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 15384 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:47:22.016 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:47:22.725 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:47:22.728 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:47:22.759 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-04-30.15:47:24.163 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:47:24.853 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:47:24.862 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:47:26.325 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:47:26.384 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.712 seconds (JVM running for 5.481)
+24-04-30.15:47:26.648 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:47:26.653 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:47:26.654 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:47:26.672 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:47:27.310 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:47:27.348 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:27.349 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:47:27.349 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:27.352 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:27.373 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:47:27.398 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:47:27.400 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:47:46.277 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 4700 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:47:46.278 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:47:46.964 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:47:46.967 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:47:46.997 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-04-30.15:47:48.387 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:47:49.068 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:47:49.077 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:47:50.531 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:47:50.591 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.662 seconds (JVM running for 5.366)
+24-04-30.15:47:50.806 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:47:51.432 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:47:51.534 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:47:51.544 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:47:51.545 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:47:51.557 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.558 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:47:51.558 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.560 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.579 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:47:51.579 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:47:51.579 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:47:51.579 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:47:51.579 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:47:51.721 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:47:51.722 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:47:51.726 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:47:51.726 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:47:51.730 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.730 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:47:51.730 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.731 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.733 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:47:51.733 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:47:51.733 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:47:51.733 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:47:51.733 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:47:51.733 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:47:51.733 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:47:51.735 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:47:51.736 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:47:51.737 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.737 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:47:51.737 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.739 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:47:51.740 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:47:51.740 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:47:51.740 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:47:51.740 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:47:51.740 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:47:51.740 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:47:51.740 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:47:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:47:55.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:48:00.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:48:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:48:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:48:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:48:10.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:48:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:48:18.509 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:48:18.517 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:48:24.214 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 27156 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:48:24.215 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:48:24.924 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:48:24.927 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:48:24.961 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-04-30.15:48:26.352 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:48:27.035 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:48:27.044 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:48:28.512 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:48:28.571 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.705 seconds (JVM running for 5.429)
+24-04-30.15:48:28.834 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:48:28.840 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:48:28.841 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:48:28.857 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:48:29.494 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:48:29.538 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:29.539 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:48:29.539 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:29.542 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:29.561 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:48:29.587 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:48:29.589 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:48:49.370 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 7296 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:48:49.371 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:48:50.066 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:48:50.068 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:48:50.100 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-04-30.15:48:51.555 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:48:52.221 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:48:52.231 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:48:53.670 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:48:53.727 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.698 seconds (JVM running for 5.392)
+24-04-30.15:48:53.941 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:48:54.627 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:48:54.733 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:48:54.744 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:48:54.744 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:48:54.757 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:54.758 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:48:54.758 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:54.760 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:48:54.779 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:48:54.810 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:48:54.818 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:52:09.582 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 28440 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:52:09.583 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:52:10.424 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:52:10.427 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:52:10.464 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-04-30.15:52:12.071 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:52:12.814 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:52:12.825 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:52:14.381 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:52:14.441 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.234 seconds (JVM running for 6.106)
+24-04-30.15:52:14.707 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:52:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:52:15.373 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:52:15.492 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:52:15.502 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:52:15.503 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:52:15.515 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:52:15.516 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:52:15.517 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:52:15.519 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:52:15.536 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:52:15.567 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:52:15.577 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:53:04.739 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 24352 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:53:04.739 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:53:05.430 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:53:05.433 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:53:05.464 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-04-30.15:53:06.854 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:53:07.533 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:53:07.541 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:53:09.019 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:53:09.078 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.689 seconds (JVM running for 5.454)
+24-04-30.15:53:09.341 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:53:09.347 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:53:09.348 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:53:09.363 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:53:09.994 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:53:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:53:10.040 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:10.041 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:53:10.041 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:10.043 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:10.061 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:53:10.087 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:53:10.089 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:53:52.489 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 7768 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:53:52.490 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:53:53.179 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:53:53.182 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:53:53.212 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-04-30.15:53:54.604 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:53:55.290 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:53:55.299 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:53:56.769 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:53:56.830 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.679 seconds (JVM running for 5.389)
+24-04-30.15:53:57.053 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:53:57.710 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:53:57.815 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:53:57.826 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:53:57.827 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:53:57.841 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:57.842 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:53:57.842 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:57.844 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:53:57.864 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-04-30.15:53:57.898 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:53:57.910 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-04-30.15:54:16.286 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_202 on DESKTOP-6TFP7P2 with PID 15068 (started by Admin in C:\Users\Admin\Desktop\fuge\big-market\big-market-app)
+24-04-30.15:54:16.287 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-04-30.15:54:16.970 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-04-30.15:54:16.974 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-04-30.15:54:17.005 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-04-30.15:54:18.406 [main            ] INFO  Version                - Redisson 3.23.4
+24-04-30.15:54:19.110 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:54:19.120 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+24-04-30.15:54:20.588 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-04-30.15:54:20.649 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.696 seconds (JVM running for 5.423)
+24-04-30.15:54:20.912 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+24-04-30.15:54:20.918 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:54:20.919 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:54:20.934 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-04-30.15:54:21.566 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-04-30.15:54:21.611 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.611 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:54:21.612 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.614 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.635 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:54:21.635 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:54:21.635 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:54:21.635 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:54:21.635 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:54:21.826 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:54:21.828 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:54:21.831 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:54:21.831 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:54:21.833 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.833 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:54:21.833 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.836 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.837 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:54:21.837 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:54:21.837 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:54:21.837 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:54:21.837 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:54:21.837 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:54:21.837 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:54:21.839 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dyx strategyId: 100006 ruleModel: rule_default awardId: 102
+24-04-30.15:54:21.839 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dyx 100006 102 rule_default
+24-04-30.15:54:21.841 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.841 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+24-04-30.15:54:21.841 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.843 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dyx strategyId:100006 awardId:102
+24-04-30.15:54:21.844 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+24-04-30.15:54:21.844 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:102 ruleValue:101:1,100
+24-04-30.15:54:21.844 [main            ] INFO  RuleLuckAwardTreeNode  - 规则过滤-兜底奖品 userId:dyx strategyId:100006 awardId:101 awardRuleValue:1,100
+24-04-30.15:54:21.844 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+24-04-30.15:54:21.844 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dyx 100006 101 1,100
+24-04-30.15:54:21.844 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100006,"userId":"dyx"}
+24-04-30.15:54:21.844 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardConfig":"1,100","awardId":101}
+24-04-30.15:54:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:54:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:30.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:54:35.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:54:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:102
+24-04-30.15:54:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:54:55.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:55:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:55:05.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:55:10.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+24-04-30.15:55:12.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-04-30.15:55:12.775 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
