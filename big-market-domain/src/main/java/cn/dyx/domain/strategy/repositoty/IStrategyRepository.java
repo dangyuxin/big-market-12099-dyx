@@ -22,7 +22,7 @@ public interface IStrategyRepository {
 
     Integer getStrategyAwardAssemble(String key, int rateRange);
 
-    StrategyEntity getStrategyStrategyEntityByStrategyId(Long strategyId);
+    StrategyEntity getStrategyEntityByStrategyId(Long strategyId);
 
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleMode);
 
@@ -45,4 +45,6 @@ public interface IStrategyRepository {
     StrategyAwardStockKeyVO takeQueueValue();
 
     void updateStrategyAwardStock(Long strategyId, Integer awardId);
+
+    StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
 }
