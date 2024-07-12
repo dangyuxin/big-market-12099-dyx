@@ -1,10 +1,11 @@
 package cn.dyx.domain.activity.repository;
 
 
+import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
 import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityEntity;
 import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
-import org.springframework.stereotype.Repository;
+
 
 /**
  * @author dyx
@@ -19,5 +20,6 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
+    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
 }
 
