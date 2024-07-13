@@ -2,6 +2,8 @@ package cn.dyx.infrastructure.persistent.redis;
 
 import org.redisson.api.*;
 
+import java.util.concurrent.TimeUnit;
+
 public interface IRedisService {
     /**
      * 设置指定 key 的值
@@ -238,4 +240,6 @@ public interface IRedisService {
     void setAtomicLong(String key, Integer value);
 
     Boolean setNx(String key);
+
+    Boolean setNx(String lockKey, long expireMillis, TimeUnit timeUnit);
 }

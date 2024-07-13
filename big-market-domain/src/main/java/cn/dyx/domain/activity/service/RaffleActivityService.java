@@ -2,6 +2,7 @@ package cn.dyx.domain.activity.service;
 
 import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
 import cn.dyx.domain.activity.model.entity.*;
+import cn.dyx.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import cn.dyx.domain.activity.model.valobj.OrderStateVO;
 import cn.dyx.domain.activity.repository.IActivityRepository;
 import cn.dyx.domain.activity.service.rule.factory.DefaultActivityChainFactory;
@@ -16,7 +17,7 @@ import java.util.Date;
  * @create 2024/5/27 22:56
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity {
+public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock {
 
     public RaffleActivityService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository,defaultActivityChainFactory);
@@ -60,5 +61,25 @@ public class RaffleActivityService extends AbstractRaffleActivity {
     @Override
     public ActivityOrderEntity createRaffleActivityOrder(ActivityShopCartEntity activityShopCartEntity) {
         return null;
+    }
+
+    @Override
+    public ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException {
+        return activityRepository.takeQueueValue();
+    }
+
+    @Override
+    public void clearQueueValue() {
+        activityRepository.clearQueueValue();
+    }
+
+    @Override
+    public void updateActivitySkuStock(Long sku) {
+        activityRepository.updateActivitySkuStock(sku);
+    }
+
+    @Override
+    public void clearActivitySkuStock(Long sku) {
+        activityRepository.clearActivitySkuStock(sku);
     }
 }
