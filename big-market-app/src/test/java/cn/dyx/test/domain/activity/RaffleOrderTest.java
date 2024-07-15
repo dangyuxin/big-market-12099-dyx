@@ -1,13 +1,11 @@
 package cn.dyx.test.domain.activity;
 
-import cn.dyx.domain.activity.model.entity.ActivityOrderEntity;
-import cn.dyx.domain.activity.model.entity.ActivityShopCartEntity;
-import cn.dyx.domain.activity.model.entity.SkuRechargeEntity;
-import cn.dyx.domain.activity.service.IRaffleOrder;
+import cn.dyx.domain.activity.model.entity.*;
+import cn.dyx.domain.activity.service.IRaffleActivityAccountQuotaService;
+import cn.dyx.domain.activity.service.IRaffleActivityPartakeService;
 import cn.dyx.domain.activity.service.armory.ActivityArmory;
 import cn.dyx.infrastructure.persistent.repository.ActivityRepository;
 import cn.dyx.types.common.Constants;
-import cn.dyx.types.enums.ResponseCode;
 import cn.dyx.types.exception.AppException;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +17,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 
@@ -34,13 +31,16 @@ import java.util.concurrent.CountDownLatch;
 public class RaffleOrderTest {
 
     @Resource
-    private IRaffleOrder raffleOrder;
+    private IRaffleActivityAccountQuotaService raffleOrder;
 
     @Resource
     private ActivityArmory activityArmory;
 
     @Resource
     private ActivityRepository activityRepository;
+
+    @Resource
+    private IRaffleActivityPartakeService raffleActivityPartakeService;
 
 
     @Before
@@ -98,5 +98,16 @@ public class RaffleOrderTest {
                 ,new Date());
     }
 
+    @Test
+    public void createOrder(){
+        // 请求参数
+        PartakeRaffleActivityEntity partakeRaffleActivityEntity = new PartakeRaffleActivityEntity();
+        partakeRaffleActivityEntity.setUserId("dyx");
+        partakeRaffleActivityEntity.setActivityId(100301L);
+        // 调用接口
+        UserRaffleOrderEntity userRaffleOrder = raffleActivityPartakeService.createOrder(partakeRaffleActivityEntity);
+        log.info("请求参数：{}", JSON.toJSONString(partakeRaffleActivityEntity));
+        log.info("测试结果：{}", JSON.toJSONString(userRaffleOrder));
+    }
 
 }

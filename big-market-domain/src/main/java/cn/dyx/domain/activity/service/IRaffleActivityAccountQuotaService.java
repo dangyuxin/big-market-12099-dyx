@@ -9,7 +9,7 @@ import cn.dyx.domain.activity.model.entity.SkuRechargeEntity;
  * @description 抽奖活动订单接口
  * @create 2024/5/27 22:50
  */
-public interface IRaffleOrder {
+public interface IRaffleActivityAccountQuotaService {
 
     /**
      * 以sku创建抽奖活动订单，获得参与抽奖资格（可消耗的次数）

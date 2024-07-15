@@ -2,9 +2,8 @@ package cn.dyx.domain.activity.repository;
 
 
 import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
-import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
-import cn.dyx.domain.activity.model.entity.ActivityEntity;
-import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
+import cn.dyx.domain.activity.model.arrgregate.CreatePartakeOrderAggregate;
+import cn.dyx.domain.activity.model.entity.*;
 import cn.dyx.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -38,5 +37,15 @@ public interface IActivityRepository {
     void updateActivitySkuStock(Long sku);
 
     void clearActivitySkuStock(Long sku);
+
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
 }
 

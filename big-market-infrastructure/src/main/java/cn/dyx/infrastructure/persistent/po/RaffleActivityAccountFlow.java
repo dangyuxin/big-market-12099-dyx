@@ -1,5 +1,7 @@
 package cn.dyx.infrastructure.persistent.po;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -7,6 +9,7 @@ import java.util.Date;
  * @description 抽奖活动账户流水表 持久化对象
  * @create 2024/5/22 12:07
  */
+@Data
 public class RaffleActivityAccountFlow {
     /**
      * 自增ID

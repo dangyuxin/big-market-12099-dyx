@@ -1,4 +1,4 @@
-package cn.dyx.domain.activity.service.rule;
+package cn.dyx.domain.activity.service.quota.rule;
 
 import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityEntity;

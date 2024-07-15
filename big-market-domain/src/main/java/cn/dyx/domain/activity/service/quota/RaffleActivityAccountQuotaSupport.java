@@ -1,22 +1,22 @@
-package cn.dyx.domain.activity.service;
+package cn.dyx.domain.activity.service.quota;
 
 import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityEntity;
 import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
 import cn.dyx.domain.activity.repository.IActivityRepository;
-import cn.dyx.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import cn.dyx.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 
 /**
  * @author dyx
  * @description 抽奖活动的支撑类
  * @create 2024/7/12 21:54
  */
-public class RaffleActivitySupport {
+public class RaffleActivityAccountQuotaSupport {
     protected DefaultActivityChainFactory defaultActivityChainFactory;
 
     protected IActivityRepository activityRepository;
 
-    public RaffleActivitySupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public RaffleActivityAccountQuotaSupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         this.activityRepository = activityRepository;
         this.defaultActivityChainFactory = defaultActivityChainFactory;
     }

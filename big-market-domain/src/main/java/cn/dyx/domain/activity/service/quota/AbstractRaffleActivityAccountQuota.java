@@ -1,10 +1,11 @@
-package cn.dyx.domain.activity.service;
+package cn.dyx.domain.activity.service.quota;
 
 import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
 import cn.dyx.domain.activity.model.entity.*;
 import cn.dyx.domain.activity.repository.IActivityRepository;
-import cn.dyx.domain.activity.service.rule.IActionChain;
-import cn.dyx.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import cn.dyx.domain.activity.service.IRaffleActivityAccountQuotaService;
+import cn.dyx.domain.activity.service.quota.rule.IActionChain;
+import cn.dyx.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import cn.dyx.types.enums.ResponseCode;
 import cn.dyx.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -16,9 +17,9 @@ import org.apache.commons.lang3.StringUtils;
  * @create 2024/5/27 22:51
  */
 @Slf4j
-public abstract class AbstractRaffleActivity extends RaffleActivitySupport implements IRaffleOrder {
+public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityAccountQuotaSupport implements IRaffleActivityAccountQuotaService {
 
-    public AbstractRaffleActivity(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository, defaultActivityChainFactory);
     }
 

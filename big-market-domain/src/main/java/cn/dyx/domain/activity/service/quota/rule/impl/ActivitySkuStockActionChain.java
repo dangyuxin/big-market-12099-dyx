@@ -1,4 +1,4 @@
-package cn.dyx.domain.activity.service.rule.impl;
+package cn.dyx.domain.activity.service.quota.rule.impl;
 
 import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityEntity;
@@ -6,7 +6,7 @@ import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
 import cn.dyx.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import cn.dyx.domain.activity.repository.IActivityRepository;
 import cn.dyx.domain.activity.service.armory.IActivityDispatch;
-import cn.dyx.domain.activity.service.rule.AbstractActionChain;
+import cn.dyx.domain.activity.service.quota.rule.AbstractActionChain;
 import cn.dyx.types.enums.ResponseCode;
 import cn.dyx.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;

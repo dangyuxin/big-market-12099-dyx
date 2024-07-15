@@ -1,5 +1,6 @@
-package cn.dyx.infrastructure.persistent.po;
+package cn.dyx.domain.activity.model.entity;
 
+import cn.dyx.domain.activity.model.valobj.UserRaffleOrderStateVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,17 +10,15 @@ import java.util.Date;
 
 /**
  * @author dyx
- * @description 用户抽奖订单表
- * @create 2024/7/15 9:09
+ * @description 用户抽奖订单实体对象
+ * @create 2024/7/15 11:42
  */
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class UserRaffleOrder {
+@NoArgsConstructor
+public class UserRaffleOrderEntity {
 
-    /** 用户ID */
-    private String id;
     /** 活动ID */
     private String userId;
     /** 活动名称 */
@@ -33,11 +32,7 @@ public class UserRaffleOrder {
     /** 订单状态；create-创建、used-已使用、cancel-已作废 */
     private Date orderTime;
     /** 创建时间 */
-    private String orderState;
-    /** 更新时间 */
-    private Date createTime;
-    /**  */
-    private Date updateTime;
+    private UserRaffleOrderStateVO orderState;
 
 }
 

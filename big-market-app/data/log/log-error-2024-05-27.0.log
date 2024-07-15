@@ -7,7 +7,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in cn.dyx.domain.activity.service.RaffleActivityService required a bean of type 'cn.dyx.domain.activity.repository.IActivityRepository' that could not be found.
+Parameter 0 of constructor in cn.dyx.domain.activity.service.quota.RaffleActivityAccountQuotaService required a bean of type 'cn.dyx.domain.activity.repository.IActivityRepository' that could not be found.
 
 
 Action:
