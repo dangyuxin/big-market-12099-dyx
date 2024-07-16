@@ -1,5 +1,8 @@
 package cn.dyx.infrastructure.persistent.dao;
 
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
+import cn.bugstack.middleware.db.router.annotation.DBRouterStrategy;
+import cn.dyx.infrastructure.persistent.po.UserAwardRecord;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -8,5 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @create 2024/7/15 9:12
  */
 @Mapper
+@DBRouterStrategy(splitTable = true)
 public interface IUserAwardRecordDao {
+    void insert(UserAwardRecord userAwardRecord);
 }
