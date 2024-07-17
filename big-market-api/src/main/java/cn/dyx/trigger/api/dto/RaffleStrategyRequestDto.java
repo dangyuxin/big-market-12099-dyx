@@ -9,6 +9,6 @@ import lombok.Data;
  */
 
 @Data
-public class RaffleRequestDto {
+public class RaffleStrategyRequestDto {
     private Long strategyId;
 }

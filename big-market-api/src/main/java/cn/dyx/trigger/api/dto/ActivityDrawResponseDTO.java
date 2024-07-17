@@ -7,21 +7,21 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author dyx
- * @description 抽奖应答结果
- * @create 2024/5/1 16:31
+ * @description 活动抽奖响应对象
+ * @create 2024/7/17 9:43
  */
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RaffleResponseDto {
-    // 奖品id
+public class ActivityDrawResponseDTO {
+
+    // 奖品ID
     private Integer awardId;
     // 奖品标题
     private String awardTitle;
-    // 奖品副标题
-    private String awardSubTitle;
-    //排序编号
+    // 排序编号【策略奖品配置的奖品顺序编号】
     private Integer awardIndex;
+
 }
+

@@ -1,6 +1,9 @@
 package cn.dyx.domain.activity.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author dyx
@@ -8,6 +11,9 @@ import lombok.Data;
  * @create 2024/7/15 11:41
  */
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class PartakeRaffleActivityEntity {
 
     /**
