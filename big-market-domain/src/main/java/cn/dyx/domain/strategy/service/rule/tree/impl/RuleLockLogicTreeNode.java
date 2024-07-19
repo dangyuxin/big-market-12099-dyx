@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.Date;
 
 /**
  * @author dyx
@@ -23,7 +24,7 @@ public class RuleLockLogicTreeNode implements ILogicTreeNode {
 
     @Override
     public DefaultTreeFactory.TreeActionEntity logics(String userId, Long strategyId, Integer awardId,
-                                                      String ruleValue) {
+                                                      String ruleValue, Date endDateTime) {
         log.info("规则过滤-次数锁 userId:{} strategyId:{} awardId:{}", userId, strategyId, awardId);
 
         long raffleCount = 0L;

@@ -13,12 +13,14 @@ public class Constants {
         public static final String ACTIVITY_COUNT_KEY = "big_market_activity_count_key_";
         public static final String ACTIVITY_SKU_STOCK_COUNT_KEY = "activity_sku_stock_count_key_";
         public static final String ACTIVITY_SKU_COUNT_QUEUE_KEY = "activity_sku_count_queue_key";
+        public static String ACTIVITY_SKU_COUNT_CLEAR_KEY = "activity_sku_count_clear_key_";
         public static String STRATEGY_AWARD_KEY = "big_market_strategy_award_key_";
         public static String STRATEGY_RATE_TABLE_KEY = "big_market_strategy_rate_table_key_";
         public static String STRATEGY_RATE_RANGE_KEY = "big_market_strategy_rate_range_key_";
         public static String RULE_TREE_VO_KEY = "rule_tree_vo_key_";
         public static String STRATEGY_AWARD_COUNT_KEY = "strategy_award_count_key_";
         public static final String STRATEGY_AWARD_COUNT_QUEUE_KEY = "strategy_award_count_queue_key_";
+
 
     }
 

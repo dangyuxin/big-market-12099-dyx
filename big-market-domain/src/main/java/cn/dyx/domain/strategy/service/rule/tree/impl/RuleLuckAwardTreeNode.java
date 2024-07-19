@@ -7,6 +7,8 @@ import cn.dyx.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+
 /**
  * @author dyx
  * @description 兜底奖节点
@@ -18,7 +20,7 @@ public class RuleLuckAwardTreeNode implements ILogicTreeNode {
 
     @Override
     public DefaultTreeFactory.TreeActionEntity logics(String userId, Long strategyId, Integer awardId,
-                                                      String ruleValue) {
+                                                      String ruleValue, Date endDateTime) {
         log.info("规则过滤-兜底奖品 userId:{} strategyId:{} awardId:{} ruleValue:{}", userId, strategyId, awardId, ruleValue);
         String[] split = ruleValue.split(Constants.COLON);
         if (split.length == 0) {
