@@ -81,10 +81,9 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public ActivityEntity queryRaffleActivityByActivityId(Long activityId) {
         // 优先从缓存获取
-//        String cacheKey = Constants.RedisKey.ACTIVITY_KEY + activityId;
-//        ActivityEntity activityEntity = redisService.getValue(cacheKey);
-//        if (null != activityEntity) return activityEntity;
-        ActivityEntity activityEntity;
+        String cacheKey = Constants.RedisKey.ACTIVITY_KEY + activityId;
+        ActivityEntity activityEntity = redisService.getValue(cacheKey);
+        if (null != activityEntity) return activityEntity;
         // 从库中获取数据
         RaffleActivity raffleActivity = raffleActivityDao.queryRaffleActivityByActivityId(activityId);
         activityEntity = ActivityEntity.builder()
@@ -96,7 +95,7 @@ public class ActivityRepository implements IActivityRepository {
                 .strategyId(raffleActivity.getStrategyId())
                 .state(ActivityStateVO.valueOf(raffleActivity.getState()))
                 .build();
-        //redisService.setValue(cacheKey, activityEntity);
+        redisService.setValue(cacheKey, activityEntity);
         return activityEntity;
     }
 
