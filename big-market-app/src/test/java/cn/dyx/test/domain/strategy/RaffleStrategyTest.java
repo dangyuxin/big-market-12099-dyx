@@ -1,4 +1,4 @@
-package cn.dyx.test.domain;
+package cn.dyx.test.domain.strategy;
 
 import cn.dyx.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.dyx.domain.strategy.model.entity.RaffleFactorEntity;

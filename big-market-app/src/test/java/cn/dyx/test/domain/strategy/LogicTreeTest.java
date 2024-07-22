@@ -1,4 +1,4 @@
-package cn.dyx.test.domain;
+package cn.dyx.test.domain.strategy;
 
 import cn.dyx.domain.strategy.model.vo.*;
 import cn.dyx.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;

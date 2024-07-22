@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class EventPublisher {
+public class   EventPublisher {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;

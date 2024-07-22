@@ -1,4 +1,4 @@
-package cn.dyx.test.domain;
+package cn.dyx.test.domain.strategy;
 
 import cn.dyx.domain.strategy.service.armory.IStrategyArmory;
 import cn.dyx.domain.strategy.service.armory.IStrategyDispatch;
