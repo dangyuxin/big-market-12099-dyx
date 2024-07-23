@@ -1,6 +1,6 @@
 package cn.dyx.domain.activity.model.arrgregate;
 
-import cn.dyx.domain.activity.model.entity.ActivityAccountEntity;
+import  cn.dyx.domain.activity.model.entity.ActivityAccountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityOrderEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
