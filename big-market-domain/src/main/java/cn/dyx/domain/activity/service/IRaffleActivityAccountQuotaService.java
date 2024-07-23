@@ -1,5 +1,6 @@
 package cn.dyx.domain.activity.service;
 
+import cn.dyx.domain.activity.model.entity.ActivityAccountEntity;
 import cn.dyx.domain.activity.model.entity.ActivityOrderEntity;
 import cn.dyx.domain.activity.model.entity.ActivityShopCartEntity;
 import cn.dyx.domain.activity.model.entity.SkuRechargeEntity;
@@ -40,6 +41,6 @@ public interface IRaffleActivityAccountQuotaService {
     Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
 
 
-
+    ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
 }
 

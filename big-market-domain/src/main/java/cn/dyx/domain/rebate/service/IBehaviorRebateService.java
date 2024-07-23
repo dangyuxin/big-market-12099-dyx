@@ -1,6 +1,7 @@
 package cn.dyx.domain.rebate.service;
 
 import cn.dyx.domain.rebate.model.entity.BehaviorEntity;
+import cn.dyx.domain.rebate.model.entity.BehaviorRebateOrderEntity;
 
 import java.util.List;
 
@@ -19,5 +20,6 @@ public interface IBehaviorRebateService {
      */
     List<String> createOrder(BehaviorEntity behaviorEntity);
 
+    List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo);
 }
 

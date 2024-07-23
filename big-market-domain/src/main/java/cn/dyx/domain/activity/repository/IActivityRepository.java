@@ -43,7 +43,7 @@ public interface IActivityRepository {
 
     void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
 
-    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+    ActivityAccountEntity queryActivityAccountEntity(Long activityId,String userId);
 
     ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
 
