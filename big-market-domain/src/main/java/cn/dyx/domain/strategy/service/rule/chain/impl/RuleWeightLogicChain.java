@@ -20,8 +20,6 @@ import java.util.*;
 @Component("rule_weight")
 public class RuleWeightLogicChain extends AbstractLogicChain {
 
-    // 根据用户ID查询用户抽奖消耗的积分值，本章节我们先写死为固定的值。后续需要从数据库中查询。
-    public Long userScore = 0L;
     @Resource
     protected IStrategyDispatch strategyDispatch;
     @Resource
@@ -38,7 +36,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
         String ruleValue = repository.queryStrategyRuleValue(strategyId, ruleModel());
 
-        // 1. 根据用户ID查询用户抽奖消耗的积分值，本章节我们先写死为固定的值。后续需要从数据库中查询。
+        // 1. 根据用户ID查询用户抽奖消耗的积分值。
         Map<Long, String> analyticalValueGroup = getAnalyticalValue(ruleValue);
         if (null == analyticalValueGroup || analyticalValueGroup.isEmpty()) return null;
 
@@ -55,6 +53,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
          *             }
          *         }
          */
+        Integer userScore = repository.queryActivityAccountTotalUseCount(userId, strategyId);
         Long nextValue = analyticalSortedKeys.stream()
                 .sorted(Comparator.reverseOrder())
                 .filter(analyticalSortedKeyValue -> userScore >= analyticalSortedKeyValue)

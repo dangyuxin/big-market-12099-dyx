@@ -75,6 +75,12 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
     @Override
+    public Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId) {
+        return activityRepository.queryRaffleActivityAccountPartakeCount(activityId, userId);
+    }
+
+
+    @Override
     public ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException {
         return activityRepository.takeQueueValue();
     }

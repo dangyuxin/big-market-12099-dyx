@@ -4,6 +4,7 @@ import cn.dyx.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyEntity;
 import cn.dyx.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.dyx.domain.strategy.model.vo.RuleTreeVO;
+import cn.dyx.domain.strategy.model.vo.RuleWeightVO;
 import cn.dyx.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import cn.dyx.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 
@@ -71,4 +72,7 @@ public interface IStrategyRepository {
      */
     Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
 
+    Integer queryActivityAccountTotalUseCount(String userId, Long strategyId);
+
+    List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 }

@@ -2,6 +2,7 @@ package cn.dyx.domain.strategy.service.raffle;
 
 import cn.dyx.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.dyx.domain.strategy.model.vo.RuleTreeVO;
+import cn.dyx.domain.strategy.model.vo.RuleWeightVO;
 import cn.dyx.domain.strategy.model.vo.StrategyAwardRuleModelVO;
 import cn.dyx.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import cn.dyx.domain.strategy.repositoty.IStrategyRepository;
@@ -17,6 +18,7 @@ import cn.dyx.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngi
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -91,5 +93,18 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
         return repository.queryAwardRuleLockCount(treeIds);
     }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeightByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return queryAwardRuleWeight(strategyId);
+    }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
+        return repository.queryAwardRuleWeight(strategyId);
+    }
+
+
 
 }
