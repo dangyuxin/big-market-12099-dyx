@@ -4,7 +4,8 @@ target/
 !**/src/test/**/target/
 
 **/data
-/docs/dev-ops/log
+/docs/dev-ops-V1/log
+/docs/dev-ops-V2/log
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

@@ -208,11 +208,12 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .build();
         } catch (Exception e) {
             log.error("日历签到返利失败 userId:{}", userId);
-            return Response.<Boolean>builder()
-                    .code(ResponseCode.UN_ERROR.getCode())
-                    .info(ResponseCode.UN_ERROR.getInfo())
-                    .data(false)
-                    .build();
+            throw e;
+//            return Response.<Boolean>builder()
+//                    .code(ResponseCode.UN_ERROR.getCode())
+//                    .info(ResponseCode.UN_ERROR.getInfo())
+//                    .data(false)
+//                    .build();
         }
     }
 
