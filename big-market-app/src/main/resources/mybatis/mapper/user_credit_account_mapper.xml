@@ -25,4 +25,15 @@
         where user_id = #{userId}
     </update>
 
+    <select id="queryUserCreditAccount" resultMap="dataMap">
+        select user_id,
+               total_amount,
+               available_amount,
+               account_status,
+               create_time,
+               update_time
+        from user_credit_account
+        where user_id = #{userId}
+    </select>
+
 </mapper>
