@@ -1,5 +1,6 @@
 package cn.dyx.domain.award.service;
 
+import cn.dyx.domain.award.model.entity.DistributeAwardEntity;
 import cn.dyx.domain.award.model.entity.UserAwardRecordEntity;
 
 /**
@@ -10,6 +11,8 @@ import cn.dyx.domain.award.model.entity.UserAwardRecordEntity;
 public interface IAwardService {
 
     void saveUserAwardRecord(UserAwardRecordEntity userAwardRecordEntity);
+
+    void distributeAward(DistributeAwardEntity distributeAwardEntity);
 
 }
 

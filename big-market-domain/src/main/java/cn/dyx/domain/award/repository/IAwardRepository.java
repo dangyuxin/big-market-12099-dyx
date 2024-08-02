@@ -1,5 +1,6 @@
 package cn.dyx.domain.award.repository;
 
+import cn.dyx.domain.award.model.arrgregate.GiveOutPrizesAggregate;
 import cn.dyx.domain.award.model.arrgregate.UserAwardRecordAggregate;
 
 /**
@@ -9,4 +10,10 @@ import cn.dyx.domain.award.model.arrgregate.UserAwardRecordAggregate;
  */
 public interface IAwardRepository {
      void saveUserAwardRecord(UserAwardRecordAggregate userAwardRecordAggregate);
+
+     String queryAwardConfig(Integer awardId);
+
+     void saveGiveOutPrizesAggregate(GiveOutPrizesAggregate giveOutPrizesAggregate);
+
+     String queryAwardKey(Integer awardId);
 }

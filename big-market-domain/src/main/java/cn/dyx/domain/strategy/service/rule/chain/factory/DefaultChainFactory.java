@@ -78,6 +78,8 @@ public class DefaultChainFactory {
          *
          */
         private String logicModel;
+
+        private String ruleValue;
     }
 
 

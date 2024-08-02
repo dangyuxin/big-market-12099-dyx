@@ -32,8 +32,8 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
      */
     @Override
     public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
-        log.info("抽奖责任链-权重开始 userId: {} strategyId: {} ruleModel: {}", userId, strategyId, ruleModel());
-
+        log.info("抽奖责任链-权重开始 userId:{} strategyId:{} ruleModel:{}", userId, strategyId, ruleModel());
+        
         String ruleValue = repository.queryStrategyRuleValue(strategyId, ruleModel());
 
         // 1. 根据用户ID查询用户抽奖消耗的积分值。
