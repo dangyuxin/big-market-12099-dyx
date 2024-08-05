@@ -1,7 +1,7 @@
 package cn.dyx.domain.activity.repository;
 
 
-import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
+import cn.dyx.domain.activity.model.arrgregate.CreateQuotaOrderAggregate;
 import cn.dyx.domain.activity.model.arrgregate.CreatePartakeOrderAggregate;
 import cn.dyx.domain.activity.model.entity.*;
 import cn.dyx.domain.activity.model.valobj.ActivitySkuStockKeyVO;
@@ -23,7 +23,9 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveNoPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
+
+    void doSaveCreditPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
 
@@ -56,5 +58,7 @@ public interface IActivityRepository {
     Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
 
     ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
 }
 

@@ -16,6 +16,7 @@ public class Constants {
         public static final String STRATEGY_RULE_WEIGHT_KEY = "strategy_rule_weight_key_";
         public static final String USER_CREDIT_ACCOUNT_LOCK = "user_credit_account_lock_";
         public static final String STRATEGY_AWARD_COUNT_QUEUE_KEY = "strategy_award_count_queue_key_";
+        public static String ACTIVITY_ACCOUNT_UPDATE_LOCK = "activity_account_update_lock_";
         public static String ACTIVITY_SKU_COUNT_CLEAR_KEY = "activity_sku_count_clear_key_";
         public static String STRATEGY_AWARD_KEY = "big_market_strategy_award_key_";
         public static String STRATEGY_RATE_TABLE_KEY = "big_market_strategy_rate_table_key_";

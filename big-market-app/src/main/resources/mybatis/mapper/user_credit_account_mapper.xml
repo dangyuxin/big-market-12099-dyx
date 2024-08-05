@@ -15,7 +15,7 @@
     <insert id="insert" parameterType="cn.dyx.infrastructure.persistent.po.UserCreditAccount">
         insert into user_credit_account(user_id, total_amount, available_amount, account_status, create_time,
                                         update_time)
-        values (#{userId}, #{totalAmount}, #{availableAmount}, #{accountStatus}, now(), now())
+        values (#{userId}, #{totalAmount}, #{availableAmount}, 'open', now(), now())
     </insert>
 
     <update id="updateAddAmount" parameterType="cn.dyx.infrastructure.persistent.po.UserCreditAccount">
