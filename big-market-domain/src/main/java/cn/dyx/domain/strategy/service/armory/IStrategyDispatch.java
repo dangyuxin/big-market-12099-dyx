@@ -11,6 +11,7 @@ public interface IStrategyDispatch {
 
     /**
      * 根据策略ID和奖品ID，扣减奖品缓存库存
+     *
      * @param strategyId  策略ID
      * @param awardId     奖品ID
      * @param endDateTime 活动结束时间

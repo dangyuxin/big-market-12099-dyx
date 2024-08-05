@@ -1,7 +1,10 @@
 package cn.dyx.domain.activity.service.quota;
 
 import cn.dyx.domain.activity.model.arrgregate.CreateOrderAggregate;
-import cn.dyx.domain.activity.model.entity.*;
+import cn.dyx.domain.activity.model.entity.ActivityCountEntity;
+import cn.dyx.domain.activity.model.entity.ActivityEntity;
+import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
+import cn.dyx.domain.activity.model.entity.SkuRechargeEntity;
 import cn.dyx.domain.activity.repository.IActivityRepository;
 import cn.dyx.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.dyx.domain.activity.service.quota.rule.IActionChain;
@@ -19,7 +22,8 @@ import org.apache.commons.lang3.StringUtils;
 @Slf4j
 public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityAccountQuotaSupport implements IRaffleActivityAccountQuotaService {
 
-    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository,
+                                              DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository, defaultActivityChainFactory);
     }
 
@@ -39,14 +43,16 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         // 2.2 查询活动信息
         ActivityEntity activityEntity = queryRaffleActivityByActivityId(activitySkuEntity.getActivityId());
         // 2.3 查询次数信息（用户在活动上可参与的次数）
-        ActivityCountEntity activityCountEntity = queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
+        ActivityCountEntity activityCountEntity =
+                queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
 
         // 3. 活动动作规则校验 todo 后续处理规则过滤流程，暂时也不处理责任链结果
         IActionChain actionChain = defaultActivityChainFactory.openActionChain();
         boolean success = actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
         // 4. 构建订单聚合对象
-        CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
+        CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity,
+                activityEntity, activityCountEntity);
 
         // 5. 保存订单
         doSaveOrder(createOrderAggregate);
@@ -55,7 +61,10 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         return createOrderAggregate.getActivityOrderEntity().getOrderId();
     }
 
-    protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
+    protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity,
+                                                                ActivitySkuEntity activitySkuEntity,
+                                                                ActivityEntity activityEntity,
+                                                                ActivityCountEntity activityCountEntity);
 
     protected abstract void doSaveOrder(CreateOrderAggregate createOrderAggregate);
 

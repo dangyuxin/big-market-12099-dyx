@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Redis 服务 - Redisson
- *
- * @author Fuzhengwei bugstack.cn @小傅哥
  */
 @Service("redissonService")
 public class RedissonService implements IRedisService {
@@ -175,7 +173,7 @@ public class RedissonService implements IRedisService {
 
     @Override
     public Boolean setNx(String lockKey, long expireMillis, TimeUnit timeUnit) {
-        return redissonClient.getBucket(lockKey).trySet("lock",expireMillis,timeUnit);
+        return redissonClient.getBucket(lockKey).trySet("lock", expireMillis, timeUnit);
     }
 
 

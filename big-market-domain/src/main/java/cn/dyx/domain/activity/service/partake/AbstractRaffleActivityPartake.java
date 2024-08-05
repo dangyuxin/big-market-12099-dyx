@@ -29,7 +29,7 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
     }
 
     @Override
-    public UserRaffleOrderEntity createOrder(String userId, Long activityId){
+    public UserRaffleOrderEntity createOrder(String userId, Long activityId) {
         return createOrder(PartakeRaffleActivityEntity.builder()
                 .activityId(activityId)
                 .userId(userId)
@@ -52,17 +52,21 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
         // 校验；活动状态
         if (!ActivityStateVO.open.equals(activityEntity.getState())) {
             log.error("创建活动抽奖单失败，活动状态未开启 activityId:{} state:{}", activityId, activityEntity.getState());
-            throw new AppException(ResponseCode.ACTIVITY_STATE_ERROR.getCode(), ResponseCode.ACTIVITY_STATE_ERROR.getInfo());
+            throw new AppException(ResponseCode.ACTIVITY_STATE_ERROR.getCode(),
+                    ResponseCode.ACTIVITY_STATE_ERROR.getInfo());
         }
         // 校验；活动日期「开始时间 <- 当前时间 -> 结束时间」
         if (activityEntity.getBeginDateTime().after(currentDate) || activityEntity.getEndDateTime().before(currentDate)) {
-            throw new AppException(ResponseCode.ACTIVITY_DATE_ERROR.getCode(), ResponseCode.ACTIVITY_DATE_ERROR.getInfo());
+            throw new AppException(ResponseCode.ACTIVITY_DATE_ERROR.getCode(),
+                    ResponseCode.ACTIVITY_DATE_ERROR.getInfo());
         }
 
         // 2. 查询未被使用的活动参与订单记录
-        UserRaffleOrderEntity userRaffleOrderEntity = activityRepository.queryNoUsedRaffleOrder(partakeRaffleActivityEntity);
+        UserRaffleOrderEntity userRaffleOrderEntity =
+                activityRepository.queryNoUsedRaffleOrder(partakeRaffleActivityEntity);
         if (null != userRaffleOrderEntity) {
-            log.info("创建参与活动订单存在 userId:{} activityId:{} userRaffleOrderEntity:{}", userId, activityId, JSON.toJSONString(userRaffleOrderEntity));
+            log.info("创建参与活动订单存在 userId:{} activityId:{} userRaffleOrderEntity:{}", userId, activityId,
+                    JSON.toJSONString(userRaffleOrderEntity));
             return userRaffleOrderEntity;
         }
 

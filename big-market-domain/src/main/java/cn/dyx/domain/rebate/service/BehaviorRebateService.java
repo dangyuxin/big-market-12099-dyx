@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -34,7 +33,8 @@ public class BehaviorRebateService implements IBehaviorRebateService {
     @Override
     public List<String> createOrder(BehaviorEntity behaviorEntity) {
         // 1. 查询返利配置
-        List<DailyBehaviorRebateVO> dailyBehaviorRebateVOS = behaviorRebateRepository.queryDailyBehaviorRebateConfig(behaviorEntity.getBehaviorTypeVO());
+        List<DailyBehaviorRebateVO> dailyBehaviorRebateVOS =
+                behaviorRebateRepository.queryDailyBehaviorRebateConfig(behaviorEntity.getBehaviorTypeVO());
         if (null == dailyBehaviorRebateVOS || dailyBehaviorRebateVOS.isEmpty()) return new ArrayList<>();
 
         // 2. 构建聚合对象
@@ -42,7 +42,8 @@ public class BehaviorRebateService implements IBehaviorRebateService {
         List<BehaviorRebateAggregate> behaviorRebateAggregates = new ArrayList<>();
         for (DailyBehaviorRebateVO dailyBehaviorRebateVO : dailyBehaviorRebateVOS) {
             // 拼装业务ID；用户ID_返利类型_外部透彻业务ID
-            String bizId = behaviorEntity.getUserId() + Constants.UNDERLINE + dailyBehaviorRebateVO.getRebateType() + Constants.UNDERLINE + behaviorEntity.getOutBusinessNo();
+            String bizId =
+                    behaviorEntity.getUserId() + Constants.UNDERLINE + dailyBehaviorRebateVO.getRebateType() + Constants.UNDERLINE + behaviorEntity.getOutBusinessNo();
             BehaviorRebateOrderEntity behaviorRebateOrderEntity = BehaviorRebateOrderEntity.builder()
                     .userId(behaviorEntity.getUserId())
                     .orderId(RandomStringUtils.randomNumeric(12))
@@ -64,7 +65,8 @@ public class BehaviorRebateService implements IBehaviorRebateService {
                     .build();
 
             // 构建事件消息
-            BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage> rebateMessageEventMessage = sendRebateMessageEvent.buildEventMessage(rebateMessage);
+            BaseEvent.EventMessage<SendRebateMessageEvent.RebateMessage> rebateMessageEventMessage =
+                    sendRebateMessageEvent.buildEventMessage(rebateMessage);
 
             // 组装任务对象
             TaskEntity taskEntity = new TaskEntity();

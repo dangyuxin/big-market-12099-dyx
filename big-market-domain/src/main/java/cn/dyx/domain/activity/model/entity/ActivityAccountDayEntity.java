@@ -16,15 +16,25 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ActivityAccountDayEntity {
 
-    /** 用户ID */
+    /**
+     * 用户ID
+     */
     private String userId;
-    /** 活动ID */
+    /**
+     * 活动ID
+     */
     private Long activityId;
-    /** 日期（yyyy-mm-dd） */
+    /**
+     * 日期（yyyy-mm-dd）
+     */
     private String day;
-    /** 日次数 */
+    /**
+     * 日次数
+     */
     private Integer dayCount;
-    /** 日次数-剩余 */
+    /**
+     * 日次数-剩余
+     */
     private Integer dayCountSurplus;
 
 }

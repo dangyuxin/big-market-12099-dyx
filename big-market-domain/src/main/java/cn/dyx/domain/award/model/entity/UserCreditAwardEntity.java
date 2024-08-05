@@ -19,9 +19,13 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class UserCreditAwardEntity {
 
-    /** 用户ID */
+    /**
+     * 用户ID
+     */
     private String userId;
-    /** 积分值 */
+    /**
+     * 积分值
+     */
     private BigDecimal creditAmount;
 
 }

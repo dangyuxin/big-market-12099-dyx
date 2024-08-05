@@ -11,7 +11,8 @@ import cn.dyx.domain.activity.model.entity.ActivitySkuEntity;
  */
 public interface IActionChain extends IActionChainArmory {
 
-    boolean action(ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
+    boolean action(ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity,
+                   ActivityCountEntity activityCountEntity);
 
 }
 

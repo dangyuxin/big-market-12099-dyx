@@ -12,27 +12,49 @@ import java.util.Date;
 @Data
 public class UserAwardRecord {
 
-    /** 自增ID */
+    /**
+     * 自增ID
+     */
     private String id;
-    /** 用户ID */
+    /**
+     * 用户ID
+     */
     private String userId;
-    /** 活动ID */
+    /**
+     * 活动ID
+     */
     private Long activityId;
-    /** 抽奖策略ID */
+    /**
+     * 抽奖策略ID
+     */
     private Long strategyId;
-    /** 抽奖订单ID【作为幂等使用】 */
+    /**
+     * 抽奖订单ID【作为幂等使用】
+     */
     private String orderId;
-    /** 奖品ID */
+    /**
+     * 奖品ID
+     */
     private Integer awardId;
-    /** 奖品标题（名称） */
+    /**
+     * 奖品标题（名称）
+     */
     private String awardTitle;
-    /** 中奖时间 */
+    /**
+     * 中奖时间
+     */
     private Date awardTime;
-    /** 奖品状态；create-创建、completed-发奖完成 */
+    /**
+     * 奖品状态；create-创建、completed-发奖完成
+     */
     private String awardState;
-    /** 创建时间 */
+    /**
+     * 创建时间
+     */
     private Date createTime;
-    /** 更新时间 */
+    /**
+     * 更新时间
+     */
     private Date updateTime;
 
 }

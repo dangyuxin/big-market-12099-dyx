@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @author dyx
- * @description  抽奖活动账户表 持久化对象
+ * @description 抽奖活动账户表 持久化对象
  * @create 2024/5/22 12:06
  */
 @Data

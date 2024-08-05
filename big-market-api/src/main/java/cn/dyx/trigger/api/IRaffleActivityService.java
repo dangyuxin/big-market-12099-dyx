@@ -15,6 +15,7 @@ public interface IRaffleActivityService {
 
     /**
      * 活动装配，数据预热缓存
+     *
      * @param activityId 活动ID
      * @return 装配结果
      */
@@ -22,6 +23,7 @@ public interface IRaffleActivityService {
 
     /**
      * 活动抽奖接口
+     *
      * @param request 请求对象
      * @return 返回结果
      */
@@ -50,7 +52,6 @@ public interface IRaffleActivityService {
      * @return 返回结果「总额度、月额度、日额度」
      */
     Response<UserActivityAccountResponseDTO> queryUserActivityAccount(UserActivityAccountRequestDTO request);
-
 
 
 }

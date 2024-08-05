@@ -24,7 +24,6 @@ import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -133,8 +132,10 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
         userBehaviorRebateOrderReq.setUserId(userId);
         userBehaviorRebateOrderReq.setOutBusinessNo(outBusinessNo);
         // 2. 查询结果
-        List<UserBehaviorRebateOrder> userBehaviorRebateOrderResList = userBehaviorRebateOrderDao.queryOrderByOutBusinessNo(userBehaviorRebateOrderReq);
-        List<BehaviorRebateOrderEntity> behaviorRebateOrderEntities = new ArrayList<>(userBehaviorRebateOrderResList.size());
+        List<UserBehaviorRebateOrder> userBehaviorRebateOrderResList =
+                userBehaviorRebateOrderDao.queryOrderByOutBusinessNo(userBehaviorRebateOrderReq);
+        List<BehaviorRebateOrderEntity> behaviorRebateOrderEntities =
+                new ArrayList<>(userBehaviorRebateOrderResList.size());
         for (UserBehaviorRebateOrder userBehaviorRebateOrder : userBehaviorRebateOrderResList) {
             BehaviorRebateOrderEntity behaviorRebateOrderEntity = BehaviorRebateOrderEntity.builder()
                     .userId(userBehaviorRebateOrder.getUserId())

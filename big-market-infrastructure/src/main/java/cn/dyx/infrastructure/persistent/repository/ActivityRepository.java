@@ -168,8 +168,8 @@ public class ActivityRepository implements IActivityRepository {
             raffleActivityAccountDay.setDayCount(createOrderAggregate.getDayCount());
             raffleActivityAccountDay.setDayCountSurplus(createOrderAggregate.getDayCount());
 
-            log.info("{raffleActivityAccountDay} {}",raffleActivityAccountDay);
-            log.info("{raffleActivityAccountMonth}  {}",raffleActivityAccountMonth);
+            log.info("{raffleActivityAccountDay} {}", raffleActivityAccountDay);
+            log.info("{raffleActivityAccountMonth}  {}", raffleActivityAccountMonth);
 
 
             // 以用户ID作为切分键，通过 doRouter 设定路由【这样就保证了下面的操作，都是同一个链接下，也就保证了事务的特性】
@@ -296,7 +296,8 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
         // 1. 查询总账户额度
-        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+        RaffleActivityAccount raffleActivityAccount =
+                raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
                 .activityId(activityId)
                 .userId(userId)
                 .build());
@@ -315,14 +316,16 @@ public class ActivityRepository implements IActivityRepository {
         }
 
         // 2. 查询月账户额度
-        RaffleActivityAccountMonth raffleActivityAccountMonth = raffleActivityAccountMonthDao.queryActivityAccountMonthByUserId(RaffleActivityAccountMonth.builder()
+        RaffleActivityAccountMonth raffleActivityAccountMonth =
+                raffleActivityAccountMonthDao.queryActivityAccountMonthByUserId(RaffleActivityAccountMonth.builder()
                 .activityId(activityId)
                 .userId(userId)
                 .month(RaffleActivityAccountMonth.currentMonth())
                 .build());
 
         // 3. 查询日账户额度
-        RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(RaffleActivityAccountDay.builder()
+        RaffleActivityAccountDay raffleActivityAccountDay =
+                raffleActivityAccountDayDao.queryActivityAccountDayByUserId(RaffleActivityAccountDay.builder()
                 .activityId(activityId)
                 .userId(userId)
                 .day(RaffleActivityAccountDay.currentDay())
@@ -427,7 +430,8 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId) {
-        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+        RaffleActivityAccount raffleActivityAccount =
+                raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
                 .activityId(activityId)
                 .userId(userId)
                 .build());
@@ -441,7 +445,8 @@ public class ActivityRepository implements IActivityRepository {
         RaffleActivityAccount raffleActivityAccountReq = new RaffleActivityAccount();
         raffleActivityAccountReq.setUserId(userId);
         raffleActivityAccountReq.setActivityId(activityId);
-        RaffleActivityAccount raffleActivityAccountRes = raffleActivityAccountDao.queryActivityAccountByUserId(raffleActivityAccountReq);
+        RaffleActivityAccount raffleActivityAccountRes =
+                raffleActivityAccountDao.queryActivityAccountByUserId(raffleActivityAccountReq);
         if (null == raffleActivityAccountRes) return null;
         // 2. 转换对象
         return ActivityAccountEntity.builder()
@@ -455,7 +460,6 @@ public class ActivityRepository implements IActivityRepository {
                 .monthCountSurplus(raffleActivityAccountRes.getMonthCountSurplus())
                 .build();
     }
-
 
 
     @Override
@@ -523,10 +527,10 @@ public class ActivityRepository implements IActivityRepository {
                     if (createPartakeOrderAggregate.isExistAccountDay()) {
                         int updateDayCount =
                                 raffleActivityAccountDayDao.updateActivityAccountDaySubtractionQuota(RaffleActivityAccountDay.builder()
-                                .userId(userId)
-                                .activityId(activityId)
-                                .day(activityAccountDayEntity.getDay())
-                                .build());
+                                        .userId(userId)
+                                        .activityId(activityId)
+                                        .day(activityAccountDayEntity.getDay())
+                                        .build());
                         if (1 != updateDayCount) {
                             // 未更新成功则回滚
                             status.setRollbackOnly();

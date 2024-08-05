@@ -24,7 +24,8 @@ public class CreditAdjustService implements ICreditAdjustService {
 
     @Override
     public String createOrder(TradeEntity tradeEntity) {
-        log.info("增加账户积分额度开始 userId:{} tradeName:{} amount:{}", tradeEntity.getUserId(), tradeEntity.getTradeName(), tradeEntity.getAmount());
+        log.info("增加账户积分额度开始 userId:{} tradeName:{} amount:{}", tradeEntity.getUserId(), tradeEntity.getTradeName(),
+                tradeEntity.getAmount());
         // 1. 创建账户积分实体
         CreditAccountEntity creditAccountEntity = TradeAggregate.createCreditAccountEntity(
                 tradeEntity.getUserId(),

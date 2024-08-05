@@ -35,7 +35,7 @@ public class SendAwardCustomer {
             log.info("监听用户奖品发送消息 topic: {} message: {}", topic, message);
             BaseEvent.EventMessage<SendAwardMessageEvent.SendAwardMessage> eventMessage = JSON.parseObject(message,
                     new TypeReference<BaseEvent.EventMessage<SendAwardMessageEvent.SendAwardMessage>>() {
-            }.getType());
+                    }.getType());
             SendAwardMessageEvent.SendAwardMessage sendAwardMessage = eventMessage.getData();
 
             // 发放奖品

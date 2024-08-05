@@ -93,8 +93,10 @@ public class AwardRepository implements IAwardRepository {
                     int count = userRaffleOrderDao.updateUserRaffleOrderStateUsed(userRaffleOrderReq);
                     if (1 != count) {
                         status.setRollbackOnly();
-                        log.error("写入中奖记录，用户抽奖单已使用过，不可重复抽奖 userId: {} activityId: {} awardId: {}", userId, activityId, awardId);
-                        throw new AppException(ResponseCode.ACTIVITY_ORDER_ERROR.getCode(), ResponseCode.ACTIVITY_ORDER_ERROR.getInfo());
+                        log.error("写入中奖记录，用户抽奖单已使用过，不可重复抽奖 userId: {} activityId: {} awardId: {}", userId, activityId
+                                , awardId);
+                        throw new AppException(ResponseCode.ACTIVITY_ORDER_ERROR.getCode(),
+                                ResponseCode.ACTIVITY_ORDER_ERROR.getInfo());
                     }
                     return 1;
                 } catch (DuplicateKeyException e) {
@@ -112,7 +114,8 @@ public class AwardRepository implements IAwardRepository {
             eventPublisher.publish(task.getTopic(), task.getMessage());
             // 更新数据库记录，task 任务表
             taskDao.updateTaskSendMessageCompleted(task);
-            log.info("写入中奖记录，发送MQ消息完成 userId: {} orderId:{} topic: {}", userId, userAwardRecordEntity.getOrderId(), task.getTopic());
+            log.info("写入中奖记录，发送MQ消息完成 userId: {} orderId:{} topic: {}", userId, userAwardRecordEntity.getOrderId(),
+                    task.getTopic());
         } catch (Exception e) {
             log.error("写入中奖记录，发送MQ消息失败 userId: {} topic: {}", userId, task.getTopic());
             taskDao.updateTaskSendMessageFail(task);
@@ -158,7 +161,8 @@ public class AwardRepository implements IAwardRepository {
                     // 更新奖品记录
                     int updateAwardCount = userAwardRecordDao.updateAwardRecordCompletedState(userAwardRecordReq);
                     if (0 == updateAwardCount) {
-                        log.warn("更新中奖记录，重复更新拦截 userId:{} giveOutPrizesAggregate:{}", userId, JSON.toJSONString(giveOutPrizesAggregate));
+                        log.warn("更新中奖记录，重复更新拦截 userId:{} giveOutPrizesAggregate:{}", userId,
+                                JSON.toJSONString(giveOutPrizesAggregate));
                         status.setRollbackOnly();
                     }
                     return 1;

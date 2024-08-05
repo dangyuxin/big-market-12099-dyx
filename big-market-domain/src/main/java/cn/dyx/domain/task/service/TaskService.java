@@ -13,7 +13,7 @@ import java.util.List;
  * @create 2024/7/16 10:50
  */
 @Service
-public class TaskService implements ITaskService{
+public class TaskService implements ITaskService {
 
     @Resource
     private ITaskRepository taskRepository;

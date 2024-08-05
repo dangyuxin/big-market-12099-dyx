@@ -372,7 +372,8 @@ public class StrategyRepository implements IStrategyRepository {
     @Override
     public Integer queryActivityAccountTotalUseCount(String userId, Long strategyId) {
         Long activityId = raffleActivityDao.queryActivityIdByStrategyId(strategyId);
-        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+        RaffleActivityAccount raffleActivityAccount =
+                raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
                 .userId(userId)
                 .activityId(activityId)
                 .build());

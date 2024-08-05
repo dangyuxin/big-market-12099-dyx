@@ -18,7 +18,6 @@ import cn.dyx.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngi
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -106,7 +105,6 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
         return repository.queryAwardRuleWeight(strategyId);
     }
-
 
 
 }

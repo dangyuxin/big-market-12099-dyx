@@ -1,6 +1,5 @@
 package cn.dyx.infrastructure.persistent.dao;
 
-import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import cn.bugstack.middleware.db.router.annotation.DBRouterStrategy;
 import cn.dyx.infrastructure.persistent.po.UserAwardRecord;
 import org.apache.ibatis.annotations.Mapper;

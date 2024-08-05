@@ -9,11 +9,11 @@ import cn.dyx.domain.award.model.arrgregate.UserAwardRecordAggregate;
  * @create 2024/7/16 9:35
  */
 public interface IAwardRepository {
-     void saveUserAwardRecord(UserAwardRecordAggregate userAwardRecordAggregate);
+    void saveUserAwardRecord(UserAwardRecordAggregate userAwardRecordAggregate);
 
-     String queryAwardConfig(Integer awardId);
+    String queryAwardConfig(Integer awardId);
 
-     void saveGiveOutPrizesAggregate(GiveOutPrizesAggregate giveOutPrizesAggregate);
+    void saveGiveOutPrizesAggregate(GiveOutPrizesAggregate giveOutPrizesAggregate);
 
-     String queryAwardKey(Integer awardId);
+    String queryAwardKey(Integer awardId);
 }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author dyx
- * @description 抽奖奖品列表,响应对象
+ * @description 抽奖奖品列表, 响应对象
  * @create 2024/5/1 16:28
  */
 @Data

@@ -18,9 +18,13 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class CreditAccountEntity {
 
-    /** 用户ID */
+    /**
+     * 用户ID
+     */
     private String userId;
-    /** 可用积分，每次扣减的值 */
+    /**
+     * 可用积分，每次扣减的值
+     */
     private BigDecimal adjustAmount;
 
 }

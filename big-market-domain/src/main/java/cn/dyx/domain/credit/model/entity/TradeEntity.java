@@ -21,15 +21,25 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class TradeEntity {
 
-    /** 用户ID */
+    /**
+     * 用户ID
+     */
     private String userId;
-    /** 交易名称 */
+    /**
+     * 交易名称
+     */
     private TradeNameVO tradeName;
-    /** 交易类型；交易类型；forward-正向、reverse-逆向 */
+    /**
+     * 交易类型；交易类型；forward-正向、reverse-逆向
+     */
     private TradeTypeVO tradeType;
-    /** 交易金额 */
+    /**
+     * 交易金额
+     */
     private BigDecimal amount;
-    /** 业务仿重ID - 外部透传。返利、行为等唯一标识 */
+    /**
+     * 业务仿重ID - 外部透传。返利、行为等唯一标识
+     */
     private String outBusinessNo;
 
 }

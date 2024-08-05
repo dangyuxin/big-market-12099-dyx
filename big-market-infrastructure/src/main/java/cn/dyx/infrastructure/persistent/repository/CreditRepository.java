@@ -62,7 +62,8 @@ public class CreditRepository implements ICreditRepository {
         userCreditOrderReq.setTradeAmount(creditOrderEntity.getTradeAmount());
         userCreditOrderReq.setOutBusinessNo(creditOrderEntity.getOutBusinessNo());
 
-        RLock lock = redisService.getLock(Constants.RedisKey.USER_CREDIT_ACCOUNT_LOCK + userId + Constants.UNDERLINE + creditOrderEntity.getOutBusinessNo());
+        RLock lock =
+                redisService.getLock(Constants.RedisKey.USER_CREDIT_ACCOUNT_LOCK + userId + Constants.UNDERLINE + creditOrderEntity.getOutBusinessNo());
         try {
             lock.lock(3, TimeUnit.SECONDS);
             dbRouter.doRouter(userId);
@@ -70,7 +71,8 @@ public class CreditRepository implements ICreditRepository {
             transactionTemplate.execute(status -> {
                 try {
                     // 1. 保存账户积分
-                    UserCreditAccount userCreditAccount = userCreditAccountDao.queryUserCreditAccount(userCreditAccountReq);
+                    UserCreditAccount userCreditAccount =
+                            userCreditAccountDao.queryUserCreditAccount(userCreditAccountReq);
                     if (null == userCreditAccount) {
                         userCreditAccountReq.setAccountStatus("open");
                         userCreditAccountDao.insert(userCreditAccountReq);

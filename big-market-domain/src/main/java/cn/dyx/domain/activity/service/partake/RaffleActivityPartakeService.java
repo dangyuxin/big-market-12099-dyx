@@ -18,7 +18,7 @@ import java.util.Date;
  * @create 2024/7/15 11:44
  */
 @Service
-public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
+public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake {
 
     private final SimpleDateFormat dateFormatMonth = new SimpleDateFormat("yyyy-MM");
     private final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyy-MM-dd");
@@ -30,20 +30,24 @@ public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
     @Override
     protected CreatePartakeOrderAggregate doFilterAccount(String userId, Long activityId, Date currentDate) {
         // 查询总账户额度
-        ActivityAccountEntity activityAccountEntity = activityRepository.queryActivityAccountByUserId(userId, activityId);
+        ActivityAccountEntity activityAccountEntity = activityRepository.queryActivityAccountByUserId(userId,
+                activityId);
 
         // 额度判断（只判断总剩余额度）
         if (null == activityAccountEntity || activityAccountEntity.getTotalCountSurplus() <= 0) {
-            throw new AppException(ResponseCode.ACCOUNT_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_QUOTA_ERROR.getInfo());
+            throw new AppException(ResponseCode.ACCOUNT_QUOTA_ERROR.getCode(),
+                    ResponseCode.ACCOUNT_QUOTA_ERROR.getInfo());
         }
 
         String month = dateFormatMonth.format(currentDate);
         String day = dateFormatDay.format(currentDate);
 
         // 查询月账户额度
-        ActivityAccountMonthEntity activityAccountMonthEntity = activityRepository.queryActivityAccountMonthByUserId(userId, activityId, month);
+        ActivityAccountMonthEntity activityAccountMonthEntity =
+                activityRepository.queryActivityAccountMonthByUserId(userId, activityId, month);
         if (null != activityAccountMonthEntity && activityAccountMonthEntity.getMonthCountSurplus() <= 0) {
-            throw new AppException(ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getInfo());
+            throw new AppException(ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getCode(),
+                    ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getInfo());
         }
 
         // 创建月账户额度；true = 存在月账户、false = 不存在月账户
@@ -58,9 +62,11 @@ public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
         }
 
         // 查询日账户额度
-        ActivityAccountDayEntity activityAccountDayEntity = activityRepository.queryActivityAccountDayByUserId(userId, activityId, day);
+        ActivityAccountDayEntity activityAccountDayEntity = activityRepository.queryActivityAccountDayByUserId(userId
+                , activityId, day);
         if (null != activityAccountDayEntity && activityAccountDayEntity.getDayCountSurplus() <= 0) {
-            throw new AppException(ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getInfo());
+            throw new AppException(ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getCode(),
+                    ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getInfo());
         }
 
         // 创建月账户额度；true = 存在月账户、false = 不存在月账户

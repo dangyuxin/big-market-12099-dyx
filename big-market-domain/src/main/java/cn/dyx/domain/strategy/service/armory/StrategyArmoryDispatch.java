@@ -19,10 +19,9 @@ import java.util.*;
 @Slf4j
 public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatch {
 
+    private final SecureRandom secureRandom = new SecureRandom();
     @Resource
     private IStrategyRepository repository;
-
-    private final SecureRandom secureRandom = new SecureRandom();
 
     @Override
     public boolean assembleLotteryStrategyByActivityId(Long activityId) {
@@ -45,7 +44,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         // 3.1 默认装配配置【全量抽奖概率】
         assembleLotteryStrategy(String.valueOf(strategyId), strategyAwardEntities);
 
-        // 3.2 权重策略配置 - 适用于 rule_weight 权重规则配置【4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,105,106,107,108,109】
+        // 3.2 权重策略配置 - 适用于 rule_weight 权重规则配置【4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,
+        // 105,106,107,108,109】
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
         String ruleWeight = strategyEntity.getWeight();
         if (null == ruleWeight) return true;
@@ -53,7 +53,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         StrategyRuleEntity strategyRuleEntity = repository.queryStrategyRule(strategyId, ruleWeight);
         // 业务异常，策略规则中 rule_weight 权重规则已适用但未配置
         if (null == strategyRuleEntity) {
-            throw new AppException(ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getCode(), ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getInfo());
+            throw new AppException(ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getCode(),
+                    ResponseCode.STRATEGY_RULE_WEIGHT_IS_NULL.getInfo());
         }
 
         Map<String, List<Integer>> ruleWeightValueMap = strategyRuleEntity.getRuleWeightValues();
@@ -61,7 +62,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             List<Integer> ruleWeightValues = ruleWeightValueMap.get(key);
             ArrayList<StrategyAwardEntity> strategyAwardEntitiesClone = new ArrayList<>(strategyAwardEntities);
             strategyAwardEntitiesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getAwardId()));
-            assembleLotteryStrategy(String.valueOf(strategyId).concat(Constants.UNDERLINE).concat(key), strategyAwardEntitiesClone);
+            assembleLotteryStrategy(String.valueOf(strategyId).concat(Constants.UNDERLINE).concat(key),
+                    strategyAwardEntitiesClone);
         }
 
         return true;
@@ -105,7 +107,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         }
 
         // 6. 存放到 Redis
-        repository.storeStrategyAwardSearchRateTable(key, shuffleStrategyAwardSearchRateTable.size(), shuffleStrategyAwardSearchRateTable);
+        repository.storeStrategyAwardSearchRateTable(key, shuffleStrategyAwardSearchRateTable.size(),
+                shuffleStrategyAwardSearchRateTable);
     }
 
     /**
@@ -162,7 +165,6 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
         return repository.subtractionAwardStock(cacheKey, endDateTime);
     }
-
 
 
 }

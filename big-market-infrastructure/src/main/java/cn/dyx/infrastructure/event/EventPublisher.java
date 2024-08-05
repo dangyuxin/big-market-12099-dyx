@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class   EventPublisher {
+public class EventPublisher {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -30,7 +30,7 @@ public class   EventPublisher {
         }
     }
 
-    public void publish(String topic, String eventMessageJSON){
+    public void publish(String topic, String eventMessageJSON) {
         try {
             rabbitTemplate.convertAndSend(topic, eventMessageJSON);
             log.info("发送MQ消息 topic:{} message:{}", topic, eventMessageJSON);

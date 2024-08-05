@@ -41,15 +41,25 @@ public class SendRebateMessageEvent extends BaseEvent<SendRebateMessageEvent.Reb
     @AllArgsConstructor
     @NoArgsConstructor
     public static class RebateMessage {
-        /** 用户ID */
+        /**
+         * 用户ID
+         */
         private String userId;
-        /** 返利描述 */
+        /**
+         * 返利描述
+         */
         private String rebateDesc;
-        /** 返利类型 */
+        /**
+         * 返利类型
+         */
         private String rebateType;
-        /** 返利配置 */
+        /**
+         * 返利配置
+         */
         private String rebateConfig;
-        /** 业务ID - 唯一ID，确保幂等 */
+        /**
+         * 业务ID - 唯一ID，确保幂等
+         */
         private String bizId;
     }
 

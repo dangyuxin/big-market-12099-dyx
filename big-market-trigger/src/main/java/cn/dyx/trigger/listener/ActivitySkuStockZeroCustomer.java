@@ -32,7 +32,8 @@ public class ActivitySkuStockZeroCustomer {
         try {
             log.info("监听活动sku库存消耗为0消息 topic: {} message: {}", topic, message);
             // 转换对象
-            BaseEvent.EventMessage<Long> eventMessage = JSON.parseObject(message, new TypeReference<BaseEvent.EventMessage<Long>>() {
+            BaseEvent.EventMessage<Long> eventMessage = JSON.parseObject(message,
+                    new TypeReference<BaseEvent.EventMessage<Long>>() {
             }.getType());
             Long sku = eventMessage.getData();
             // 更新库存
